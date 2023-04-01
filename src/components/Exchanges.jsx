@@ -1,3 +1,9 @@
-import { RadarController } from "chart.js";
+import React from 'react'
 
-RadarController
+const Exchanges = () => {
+  return (
+    <div>Exchanges</div>
+  )
+}
+
+export default Exchanges
