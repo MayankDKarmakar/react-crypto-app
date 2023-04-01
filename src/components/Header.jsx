@@ -5,15 +5,10 @@ import img from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <HStack
-      p={"4"}
-      bgColor={"#130f40"}
-      justifyContent={"space-between"}
-      shadow={"base"}
-    >
+    <HStack p={"4"} bgColor={"#130f40"} justifyContent={"space-between"} boxShadow={'base'} >
       <Image src={img} boxSize={"10"} />
 
-      <Box px={'8'} >
+      <Box px={"8"}>
         <HStack>
           <Button variant={"link"} color={"white"}>
             <Link to={"/"}>Home</Link>
