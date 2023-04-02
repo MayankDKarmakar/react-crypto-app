@@ -11,18 +11,31 @@ const Header = () => {
       justifyContent={"space-between"}
       boxShadow={"base"}
     >
-      <Image src={img} boxSize={"10"} />
+      <Link to={"/"}>
+        <Image src={img} boxSize={"10"} />
+      </Link>
 
       <Box px={"8"}>
-        <HStack transition={"all 0.3s"}
-         >
-          <Button variant={"link"} color={"whiteAlpha.900"} css={{ "&:hover": { transform: "scale(1.1)" }}} >
+        <HStack transition={"all 0.3s"}>
+          <Button
+            variant={"link"}
+            color={"whiteAlpha.900"}
+            css={{ "&:hover": { transform: "scale(1.1)" } }}
+          >
             <Link to={"/"}>Home</Link>
           </Button>
-          <Button variant={"link"} color={"whiteAlpha.900"} css={{ "&:hover": { transform: "scale(1.1)" }}} >
+          <Button
+            variant={"link"}
+            color={"whiteAlpha.900"}
+            css={{ "&:hover": { transform: "scale(1.1)" } }}
+          >
             <Link to={"/exchanges"}>Exchanges</Link>
           </Button>
-          <Button variant={"link"} color={"whiteAlpha.900"} css={{ "&:hover": { transform: "scale(1.1)" }}} >
+          <Button
+            variant={"link"}
+            color={"whiteAlpha.900"}
+            css={{ "&:hover": { transform: "scale(1.1)" } }}
+          >
             <Link to={"/coins"}>Coins</Link>
           </Button>
         </HStack>

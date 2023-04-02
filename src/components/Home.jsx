@@ -6,7 +6,12 @@ import img from "../assets/image.png";
 const Home = () => {
   return (
     <Box bgColor={"#130f40"} w={"full"} h={"85vh"}>
-      <motion.div style={{ height: "80vh" }} animate={{translateY:"20px"}} transition={{duration:2, repeat:Infinity, repeatType:"reverse"  }} >
+      <motion.div
+        style={{ height: "80vh" }}
+        
+        animate={{ transform: 'rotate3d(0,1,0, 360deg)'}}
+        transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
+      >
         <Image src={img} w={"full"} h={"full"} objectFit={"scale-down"} />
       </motion.div>
     </Box>
