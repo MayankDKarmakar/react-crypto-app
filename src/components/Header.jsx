@@ -12,11 +12,15 @@ const Header = () => {
       boxShadow={"base"}
     >
       <Link to={"/"}>
-        <Image src={img} boxSize={"10"} />
+        <Image
+          src={img}
+          boxSize={"10"}
+          css={{ "&:hover": { transform: "scale(1.1)" } }}
+        />
       </Link>
 
       <Box px={"8"}>
-        <HStack transition={"all 0.3s"}>
+        <HStack>
           <Button
             variant={"link"}
             color={"whiteAlpha.900"}
