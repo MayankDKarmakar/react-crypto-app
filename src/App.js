@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Exchanges from "./components/Exchanges";
 import Coins from "./components/Coins";
-import CoinDetails from './components/CoinDetails';
+import CoinDetails from "./components/CoinDetails";
 
 const App = () => {
   return (
