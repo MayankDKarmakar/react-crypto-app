@@ -6,6 +6,7 @@ import img from "../assets/logo.png";
 const Header = () => {
   return (
     <HStack
+    
       p={"4"}
       bgColor={"#130f40"}
       justifyContent={"space-between"}
